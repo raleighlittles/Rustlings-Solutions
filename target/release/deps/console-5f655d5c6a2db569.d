@@ -1,0 +1,12 @@
+/home/raleigh/Rustlings/rustlings/target/release/deps/console-5f655d5c6a2db569.rmeta: /home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/lib.rs /home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/common_term.rs /home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/kb.rs /home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/term.rs /home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/unix_term.rs /home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/utils.rs
+
+/home/raleigh/Rustlings/rustlings/target/release/deps/libconsole-5f655d5c6a2db569.rlib: /home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/lib.rs /home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/common_term.rs /home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/kb.rs /home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/term.rs /home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/unix_term.rs /home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/utils.rs
+
+/home/raleigh/Rustlings/rustlings/target/release/deps/console-5f655d5c6a2db569.d: /home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/lib.rs /home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/common_term.rs /home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/kb.rs /home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/term.rs /home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/unix_term.rs /home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/utils.rs
+
+/home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/lib.rs:
+/home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/common_term.rs:
+/home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/kb.rs:
+/home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/term.rs:
+/home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/unix_term.rs:
+/home/raleigh/.cargo/registry/src/github.com-1ecc6299db9ec823/console-0.7.7/src/utils.rs:
