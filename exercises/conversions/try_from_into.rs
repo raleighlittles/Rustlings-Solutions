@@ -2,6 +2,14 @@
 // Basically, this is the same as From. The main difference is that this should return a Result type
 // instead of the target type itself.
 // You can read more about it at https://doc.rust-lang.org/std/convert/trait.TryFrom.html
+
+/* Hint: Read the steps described at the paragraph beginning with 'Your task is ...'.
+   The 'logic' in each of the 3 cases will the same. Make sure you look closely at the type of
+   the function parameter and compare it to the type of the fields used in the struct.
+   
+   Also, besides reading all of the tests, see if you notice anything special about them that might
+   explain their brevity. */
+
 use std::convert::{TryInto, TryFrom};
 
 #[derive(Debug)]
@@ -10,8 +18,6 @@ struct Color {
     green: u8,
     blue: u8,
 }
-
-// I AM NOT DONE
 
 // Your task is to complete this implementation
 // and return an Ok result of inner type Color.
@@ -26,6 +32,37 @@ struct Color {
 impl TryFrom<(i16, i16, i16)> for Color {
     type Error = String;
     fn try_from(tuple: (i16, i16, i16)) -> Result<Self, Self::Error> {
+        let (r, g, b) = tuple;
+
+        if r < 0 {
+           panic!("Can't have negative color")
+           //return Err(" ".to_string())
+        }
+
+        // TODO: What's a 'cleaner' way of checking this, without hardcoding the maximum unsigned 8-bit integer value?
+        if r > 255 {
+            panic!("Red color value exceeds maximum size")
+        }
+
+        if g < 0 {
+             panic!("Can't have negative color")
+           // return Err("Error".to_string())
+        }
+
+        if g > 255 {
+            panic!("Green color value exceeds maximum size")
+        }
+
+        if b < 0 {
+            panic!("Can't have negative color")
+          //return Err(" ".to_string())
+        }
+
+        if b > 255 {
+            panic!("Blue color value exceeds maximum size")
+        }
+
+        return Ok(Color{red: r as u8, green: g as u8, blue: b as u8});
     }
 }
 
@@ -33,6 +70,35 @@ impl TryFrom<(i16, i16, i16)> for Color {
 impl TryFrom<[i16; 3]> for Color {
     type Error = String;
     fn try_from(arr: [i16; 3]) -> Result<Self, Self::Error> {
+        let r = arr[0];
+        let g = arr[1];
+        let b = arr[2];
+
+        if r < 0 {
+            panic!("Can't have negative color")
+        }
+
+        if r > 255 {
+            panic!("Red color value exceeds maximum size")
+        }
+
+        if g < 0 {
+            panic!("Can't have negative color")
+        }
+
+        if g > 255 {
+            panic!("Green color value exceeds maximum size")
+        }
+
+        if b < 0 {
+            panic!("Can't have negative color")
+        }
+
+        if b > 255 {
+            panic!("Blue color value exceeds maximum size")
+        }
+
+        return Ok(Color{red: r as u8, green: g as u8, blue: b as u8});
     }
 }
 
@@ -40,6 +106,39 @@ impl TryFrom<[i16; 3]> for Color {
 impl TryFrom<&[i16]> for Color {
     type Error = String;
     fn try_from(slice: &[i16]) -> Result<Self, Self::Error> {
+
+        if let &[r, g, b] = slice {
+
+            if r < 0 {
+                panic!("Can't have negative color")
+            }
+
+            if r > 255 {
+                panic!("Red color channel exceeds maximum size")
+            }
+    
+            if g < 0 {
+                panic!("Can't have negative color")
+            }
+
+            if g > 255 {
+                panic!("Green color channel exceeds maximum size")
+            }
+    
+            if b < 0 {
+                panic!("Can't have negative color")
+            }
+
+            if b > 255 {
+                panic!("Blue color channel exceeds maximum size")
+            }
+
+            return Ok(Color{red: r as u8, green: g as u8, blue: b as u8});
+        }
+    
+        else {
+            return Err("Can't destructure slice.".to_string())
+        }
     }
 }
 
